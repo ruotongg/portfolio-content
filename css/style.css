@@ -28,22 +28,34 @@
 
 /* secular-one-regular - latin */
 @font-face {
-  font-family: 'Secular One';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/secular-one-v5-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/secular-one-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/secular-one-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/secular-one-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/secular-one-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/secular-one-v5-latin-regular.svg#SecularOne') format('svg'); /* Legacy iOS */
+    font-family: 'Secular One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/secular-one-v5-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/secular-one-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/secular-one-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/secular-one-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/secular-one-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/secular-one-v5-latin-regular.svg#SecularOne') format('svg'); /* Legacy iOS */
 }
 
 *{
     box-sizing: border-box;
 }
 
+.skip{
+    position: fixed;
+    margin: 10px;
+    padding: 5px;
+    font-family: "Franklin Gothic Medium", "Secular One", Sans-serif;
+    font-size: 12px;
+    color: #5800FF;
+    text-decoration: none;
+    background-color: white;
+    border:dotted 2px #FFADF0;
+    border-radius: 5px;
+}
 
 nav{
     text-align: center;
@@ -122,7 +134,7 @@ div p{
     font-size: 15px;
     margin-bottom: 25px;
     display: inline-block;
-    color: #041562;
+    color: black;
 }
 
 div p:last-child{
