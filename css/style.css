@@ -45,10 +45,11 @@
 }
 
 .skip{
-    position: relative;
+    position: absolute;
     display: block;
     height: 10px;
     margin: 5px;
+    left: -500px;
     font-family: "Franklin Gothic Medium", "Secular One", Sans-serif;
     font-size: 12px;
     color: #5800FF;
@@ -56,21 +57,24 @@
     background-color: white;
 }
 
+.skip:focus{
+    left:0px;
+    top: 10px;
+}
+
 nav{
     text-align: center;
     background-color: #FDEBF7;
 }
 
-@media (max-width: 799px){
-    nav li{
-        display: inline-block;
-        width: 100%;
-        padding: 15px 0;
-    }
+nav li{
+    display: inline-block;
+    width: 100%;
+    padding: 15px 0;
 }
 
 
-@media (min-width: 800px){
+@media screen and (min-width: 800px){
     nav li{
         display: inline-block;
         width: 200px;
@@ -109,9 +113,11 @@ h1{
     color: #FC28FB;
     text-align: center;
     font-family: "Pacifico", "Franklin Gothic Medium", Sans-serif;
-    padding: 40px 0; 
-    background-color: #FFFFFF;
-
+    padding: 120px 0; 
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
 }
 
 h2{
@@ -125,6 +131,7 @@ div{
     max-width: 700px;
     min-width: 200px;
     margin: auto;
+    padding-top: 10px;
 }
 
 div p{
@@ -150,51 +157,54 @@ div p:last-child{
 }
 
 
-@media (max-width: 499px){
-    img{
-        display:block;
-        margin: 20px auto;
-        padding: 3px;
-        width: 100%;
-        border:dotted 2px #FBCAFF;
-        border-radius: 5px;
-    }
-}
-@media (min-width: 500px){
-
-    img{
-        margin: 0 10px 10px;
-        padding: 3px 5px;
-        width: 30%;
-        border:dotted 2px #FBCAFF;
-        border-radius: 5px;
-    }
-
-    p img{
-        float:right;
-    }
+img{
+    display:block;
+    margin: 20px auto;
+    padding: 3px;
+    width: 100%;
+    border:dotted 2px #FBCAFF;
+    border-radius: 5px;
 }
 
-@media (max-width: 499px){
-
-    main > div > img{
-        display: block;
-        width: 100%;
-        margin: 10px auto;
-    }
-}
-
-@media (min-width:500px){
-
-    main > div > img{
-        display: block;
-        width: 50%;
-        margin: 10px auto;
-    }
+div.mid img{
+    display: block;
+    width: 100%;
+    margin: 10px auto;
 }
 
 .gallery img:nth-child(even){
     border-color: darkgray;
+}
+
+@media screen and (min-width: 500px){
+
+    img{
+        margin: 0 10px 10px;
+        padding: 3px 5px;
+        border:dotted 2px #FBCAFF;
+        border-radius: 5px;
+    }
+
+
+    div.mid img{
+        display: block;
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    div.pic{
+        display: grid;
+        grid-template-columns: 4fr 2fr;
+    }
+
+    div.pic h2{
+        grid-column: 1/-1;
+    }
+
+    div.gallery img{
+        width: 30%;
+        object-fit: cover;
+    }
 }
 
 img:hover{
@@ -202,14 +212,10 @@ img:hover{
 }
 
 
-.gallery{
-    text-align: center;
+div.gallery{
+    display:flex;
+    flex-flow: row wrap;
 }
-
-.gallery img{
-    display:inline-block;
-}
-
 
 .audio{
     text-align: center;
