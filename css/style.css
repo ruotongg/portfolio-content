@@ -320,8 +320,6 @@ div a:hover{
 }
 
 footer{
-    display: flex;
-    flex-flow: column wrap;
     text-align: center;
     padding: 20px 0;
     background-color: #FDEBF7;
