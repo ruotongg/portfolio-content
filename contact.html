@@ -1,0 +1,76 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/favicon.png">
+        <link rel="stylesheet" href="css/html5reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <title>Home</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WR4FGPYL1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-1WR4FGPYL1');
+        </script>
+    </head>
+
+    <body>
+        <a class = "skip" href="#main">Skip to Main Content</a>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href = "index.html" >Home</a></li>
+                    <li><a href = "character.html">Characters</a></li>
+                    <li><a href = "music.html">Music</a></li>
+                    <li><a href = "accessibility.html">Accessibility</a></li>
+                    <li class="active"><a href = "contact.html" >Contact</a></li>
+                </ul>
+            </nav>
+            <h1>Contact Me</h1>
+        </header>
+
+        <main>
+            <div id="main">
+                <h2>Let's talk!</h2>
+                <section id="overlay">
+                    <form action="contact.html" method="POST">
+                        <section class="name">
+                            <label for="name"><i class="fa-regular fa-signature"></i>Your Name:</label>
+                            <input type="text" name="name" id="name" placeholder="first name last name">
+                        </section>
+
+                        <section class="email">
+                            <label for="email">Your Email:</label>
+                            <input type="text" name="email" id="email" placeholder="aabbcc@gmail.com">
+                        </section>
+
+                        <section class="note">
+                            <label for="note">Additional Notes:</label>
+                            <textarea id="note" name="note" rows="3" cols="20" placeholder="I love cowboy bebop..."></textarea>
+                        </section>
+
+                        <section class="submission">
+                            <input type="submit" value="Submit">
+                        </section>
+                    </form>
+                </section>
+            </div>
+            <div>
+                <h2>Or check my work on...</h2>
+                <div class="social">
+                    <a href="https://github.com/ruotongg"><span><i class="fa fa-github-square"></i></span>github.com/ruotongg</a>
+                    <a href="https://www.instagram.com/imsowindedicantsingforyoutoday/"><span><i class="fa fa-instagram"></i></span>imsowindedicantsingforyoutoday</a>
+                    
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Ruotong Gao &copy; 2021</p>
+        </footer>
+    </body>
+</html>
