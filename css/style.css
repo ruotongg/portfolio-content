@@ -117,7 +117,7 @@ h1{
     background-image: url("../images/background.jpg");
     background-size: cover;
     background-attachment: fixed;
-    background-position: bottom;
+    background-position: center;
 }
 
 h2{
@@ -271,6 +271,7 @@ input, textarea{
 input[type=submit]{
     font-family: "Franklin Gothic Medium","Secular One", Sans-serif;
     background-color: #FDEBF7;
+    color: black;
     font-size: 16px;
     cursor: pointer;
     padding: 15px;
@@ -290,14 +291,14 @@ div.social span{
 
 div.social a{
     font-size: 14px;
-    color: dimgray;
+    color: black;
     text-decoration: none;
     font-family: "Work Sans", "Calibri", Sans-serif;
 }
 
 
 div a:visited{
-    color: dimgray;
+    color: black;
 }
 
 div a:hover{
