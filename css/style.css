@@ -182,15 +182,24 @@ div.mid img{
 @keyframes animatedImage {
     from {
         opacity: 30%;
+        border-radius: 5;
     }
     to {
         opacity: 100%;
+        border-radius: 20px;
     }
 }
 
 .gallery img:nth-child(even){
     border-color: darkgray;
     animation: animatedImage 3s linear infinite alternate;
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    .gallery img:nth-child(even){
+        animation: none;
+    }
+
 }
 
 @media screen and (min-width: 500px){
