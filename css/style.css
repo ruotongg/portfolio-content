@@ -80,6 +80,10 @@ nav li{
         width: 200px;
         padding: 15px 0;
     }
+
+    h1{
+        background-attachment: fixed;
+    }
 }
 
 nav li a{
@@ -116,9 +120,7 @@ h1{
     padding: 120px 0; 
     background-image: url("../images/background.jpg");
     background-size: cover;
-    background-attachment: fixed;
     background-position: center;
-    background-size:auto
 }
 
 h2{
