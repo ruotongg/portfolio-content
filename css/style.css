@@ -81,7 +81,7 @@ nav li{
         padding: 15px 0;
     }
 
-    h1{
+    .hero{
         background-attachment: fixed;
     }
 }
@@ -113,18 +113,14 @@ main{
 }
 
 h1{
-    font-size: 36px;
+    font-size: 42px;
     color: #FC28FB;
     text-align: center;
     font-family: "Pacifico", "Franklin Gothic Medium", Sans-serif;
-    padding: 120px 0; 
-    background-image: url("../images/background.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 h2{
-    font-size: 24px;
+    font-size: 26px;
     color: #FC28FB;
     font-family: "Franklin Gothic Medium","Secular One", Sans-serif;
     padding: 20px 0;
@@ -145,10 +141,11 @@ div{
     padding-top: 10px;
 }
 
+
 div p{
     line-height: 140%;
     font-family: "Work Sans", "Calibri", Sans-serif;
-    font-size: 15px;
+    font-size: 1em;
     margin-bottom: 25px;
     display: inline-block;
     color: black;
@@ -200,6 +197,13 @@ div.mid img{
         animation: none;
     }
 
+    #snow-top-layer {
+        animation: none;
+    }
+
+    #snow-bottom-layer {
+        animation: none;
+    }
 }
 
 @media screen and (min-width: 500px){
@@ -328,5 +332,64 @@ footer{
 footer p{
     color: dimgray;
     font-family: "Franklin Gothic Medium","Secular One",  Sans-serif;
-    font-size: 14px;
+    font-size: 0.8em;
+}
+
+div.hero{
+    max-width: inherit;
+}
+
+.hero {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    min-height: 30rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.hero_content {
+    position: relative;
+    align-self: center;
+    padding: 3rem 0;
+}
+
+.snow {
+    position: absolute;
+    min-width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.snow .svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#snow-top-layer {
+    will-change: transform;
+    transform: translateY(-768px);
+    animation: fall 22.5s infinite linear;
+}
+
+#snow-bottom-layer {
+    will-change: transform;
+    transform: translateY(-768px);
+    animation: fall 45s infinite linear;
+}
+
+@keyframes fall {
+
+    100% {
+        transform: translateY(0);
+    }
+
 }
