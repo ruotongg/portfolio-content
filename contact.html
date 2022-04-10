@@ -9,6 +9,7 @@
         <title>Home</title>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WR4FGPYL1"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -107,11 +108,40 @@
                     <h1>Contact Me</h1>
                 </div>
             </div>
+            <div id="myNav" class="overlay">
 
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <a href="#main">Let's talk!</a>
+                    <a href="#mywork">Check my work...</a>
+                </div>
+
+            </div>
         </header>
 
         <main>
-            <div id="main">
+
+            <div class="navin" onclick="openNav()">
+                <p>Contents</p>
+            </div>
+
+            <div id="toc">
+                <ul>
+
+                </ul>
+                <img src="images/contents.png" alt=""/>
+            </div>
+
+            <div id="comment">
+                <img src="images/speak.jpg" alt=""/>
+                <img src="images/com.svg" alt=""/>
+                <p>C'mon. Let's go.</p>
+            </div>
+
+            <div id="main" class="seg-begin">
                 <h2>Let's talk!</h2>
                 <section id="overlay">
                     <form action="https://formspree.io/f/moqrlgde" method="POST">
@@ -136,7 +166,7 @@
                     </form>
                 </section>
             </div>
-            <div>
+            <div id="mywork" class="seg-begin">
                 <h2>Or check my work on...</h2>
                 <div class="social">
                     <a href="https://github.com/ruotongg"><span><i class="fa fa-github-square"></i></span>github.com/ruotongg</a>
@@ -146,7 +176,8 @@
         </main>
 
         <footer>
-            <p>Ruotong Gao &copy; 2021</p>
+            <p>SEE YOU SPACE COWBOY...</p>
         </footer>
+        <script src="js/nav.js"></script>
     </body>
 </html>

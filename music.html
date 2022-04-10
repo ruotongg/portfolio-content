@@ -10,6 +10,7 @@
         <title>Music</title>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WR4FGPYL1"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -32,7 +33,7 @@
 
                 </ul>
             </nav>
-                        <div class="hero">
+            <div class="hero">
                 <div class="snow">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1536" preserveAspectRatio="xMidYMax slice">
                         <g fill="#FFF" fill-opacity=".15" transform="translate(55 42)">
@@ -109,18 +110,46 @@
                     <h1>Music</h1>
                 </div>
             </div>
-            
+            <div id="myNav" class="overlay">
+
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <a href="#main">Yoko Kanno</a>
+                    <a href="#song">The Real Folk Blues</a>
+                </div>
+
+            </div>
         </header>
 
         <main>
-            <div id="main"  class="pic">
+            <div class="navin" onclick="openNav()">
+                <p>Contents</p>
+            </div>
+
+            <div id="toc">
+                <ul>
+
+                </ul>
+                <img src="images/contents.png" alt=""/>
+            </div>
+
+            <div id="comment">
+                <img src="images/speak.jpg" alt=""/>
+                <img src="images/com.svg" alt=""/>
+                <p>C'mon. Let's go.</p>
+            </div>
+
+            <div id="main"  class="pic seg-begin">
                 <h2>Yoko Kanno</h2>
                 <p>               
                     The music for Cowboy Bebop was composed by Yoko Kanno. Kanno formed the blues and jazz band Seatbelts to perform the series’s music. According to Kanno, the music was one of the first aspects of the series to begin production, before most of the characters, story, or animation had been finalized. The genres she used for its composition were western, opera, and jazz. Watanabe noted that Kanno did not score the music exactly the way he told her to. He stated, "She gets inspired on her own, follows up on her own imagery, and comes to me saying 'this is the song we need for Cowboy Bebop,' and composes something completely on her own." Kanno herself was sometimes surprised at how pieces of her music were used in scenes, sometimes wishing it had been used elsewhere, though she also felt that none of their uses were "inappropriate". She was pleased with the working environment, finding the team very relaxed in comparison with other teams she had worked with.</p>
                 <img src="images/yoko_kanno.jpg" width="200" alt="A girl in white shirt smiling"/>
 
             </div>
-            <div>
+            <div id="song" class="seg-begin">
 
                 <h2>The Real Folk Blues</h2>
 
@@ -136,7 +165,8 @@
         </main>
 
         <footer>
-            <p>Ruotong Gao &copy; 2021</p>
+            <p>SEE YOU SPACE COWBOY...</p>
         </footer>
+        <script src="js/nav.js"></script>
     </body>
 </html>

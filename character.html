@@ -10,6 +10,7 @@
         <title>Characters</title>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WR4FGPYL1"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -109,16 +110,52 @@
                     <h1>Characters</h1>
                 </div>
             </div>
+            <div id="myNav" class="overlay">
+
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <a href="#main">Spike Spiegel</a>
+                    <a href="#faye">Faye Valentine</a>
+                    <a href="#jet">Jet Black</a>
+                    <a href="#ed">Edward</a>
+                    <a href="#ein">Ein</a>
+                    <a href="#julia">Julia</a>
+                    <a href="#vicious">Vicious</a>
+                    <a href="#vincent">Vincent</a>
+                    <a href="#elektra">Elektra</a>
+                </div>
+
+            </div>
         </header>
 
         <main>
-            <div id="main" class="pic">
+            <div class="navin" onclick="openNav()">
+                <p>Contents</p>
+            </div>
+
+            <div id="toc">
+                <ul>
+
+                </ul>
+                <img src="images/contents.png" alt=""/>
+            </div>
+
+            <div id="comment">
+                <img src="images/speak.jpg" alt=""/>
+                <img src="images/com.svg" alt=""/>
+                <p>C'mon. Let's go.</p>
+            </div>
+
+            <div id="main" class="pic seg-begin">
                 <h2>Spike Spiegel</h2>
                 <p>                
                     Spike Spiegel (スパイク・スピーゲル Supaiku Supīgeru) is a former member of the Red Dragon Crime Syndicate, who left by faking his death after falling in love with a woman called Julia.</p>
                 <img src = "images/spike.gif" width="200" alt="A good-looking man with finger gun"/>
             </div>
-            <div class="pic">
+            <div id="faye" class="pic seg-begin">
 
                 <h2>Faye Valentine</h2>
                 <p>                
@@ -126,7 +163,7 @@
                 <img src = "images/faye.gif" width="200" alt="Two girls in a car"/>
             </div>
 
-            <div class="pic">
+            <div id="jet" class="pic seg-begin">
 
                 <h2>Jet Black</h2>
                 <p>                
@@ -134,7 +171,7 @@
                 <img src = "images/jet.gif" width="200" alt="A bald man eating eggs"/>
             </div>
 
-            <div class="pic">
+            <div id="ed" class="pic seg-begin">
 
                 <h2>Edward</h2>
                 <p>                
@@ -142,7 +179,7 @@
                 <img src = "images/ed.gif" width="200" alt="A little girl with red hair wearing glasses"/>
             </div>
 
-            <div class="pic">
+            <div id="ein" class="pic seg-begin">
 
                 <h2>Ein</h2>
                 <p>               
@@ -150,14 +187,14 @@
                 <img src = "images/ein.jpg" width="200" alt="A dog on the floor"/>
             </div>
 
-            <div class="pic">
+            <div id="julia" class="pic seg-begin">
 
                 <h2>Julia</h2>
                 <p>                Julia was an affiliate of the Red Dragon crime syndicate who had relationships with Vicious and Spike Spiegel.</p>
                 <img src = "images/julia.jpg" width="200" alt="A girl with blonde hair smiling"/>
             </div>
 
-            <div class="pic">
+            <div id="vicious" class="pic seg-begin">
 
                 <h2>Vicious</h2>
                 <p>                
@@ -165,7 +202,7 @@
                 <img src = "images/vicious.png" width="200" alt="A man with white hair thinking"/> 
             </div>
 
-            <div class="pic">
+            <div id="vincent" class="pic seg-begin">
 
                 <h2>Vincent</h2>
                 <p>                
@@ -173,7 +210,7 @@
                 <img src="images/vincent.jpg" width="200" alt="A man wearing evil smile"/>
             </div>
 
-            <div class="pic">
+            <div id="elektra" class="pic seg-begin">
 
                 <h2>Elektra</h2>
                 <p>                
@@ -185,7 +222,9 @@
         </main>
 
         <footer>
-            <p>Ruotong Gao &copy; 2021</p>
+            <p>SEE YOU SPACE COWBOY...</p>
         </footer>
+        <script src="js/nav.js"></script>
+
     </body>
 </html>
