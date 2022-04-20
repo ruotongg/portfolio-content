@@ -792,7 +792,7 @@ div.hero{
     display: none;
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 1000px){
     nav li{
         display: inline-block;
         width: 120px;
