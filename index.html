@@ -23,15 +23,18 @@
     <body>
         <a class = "skip" href="#main">Skip to Main Content</a>
         <header>
-            <nav>
-                <ul>
-                    <li class="active"><a href = "index.html" >Home</a></li>
-                    <li><a href = "character.html">Characters</a></li>
-                    <li><a href = "music.html">Music</a></li>
-                    <li><a href = "accessibility.html">Accessibility</a></li>
-                    <li><a href = "contact.html" >Contact</a></li>
-                </ul>
-            </nav>
+            <div class="head">
+                <p>Cowboy Bebop</p>
+                <nav>
+                    <ul>
+                        <li class="active"><a href = "index.html" >Home</a></li>
+                        <li><a href = "character.html">Characters</a></li>
+                        <li><a href = "music.html">Music</a></li>
+                        <li><a href = "accessibility.html">Accessibility</a></li>
+                        <li><a href = "contact.html" >Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div class="hero">
                 <div class="snow">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1536" preserveAspectRatio="xMidYMax slice">
@@ -137,7 +140,7 @@
                 </ul>
                 <img src="images/contents.png" alt=""/>
             </div>
-            
+
             <div id="comment">
                 <img src="images/speak.jpg" alt=""/>
                 <img src="images/com.svg" alt=""/>
@@ -148,8 +151,16 @@
                 <h2>Introduction</h2>
                 <p>Cowboy Bebop (Japanese: カウボーイビバップ, Hepburn: Kaubōi Bibappu) is a Japanese neo-noir science fiction anime television series created and animated by Sunrise, led by a production team of director Shinichirō Watanabe, screenwriter Keiko Nobumoto, character designer Toshihiro Kawamoto, mechanical designer Kimitoshi Yamane, and composer Yoko Kanno, who are collectively billed as Hajime Yatate. The series, which ran for twenty-six episodes (in six “sessions” of four to five episodes each), is set in the year 2071, and follows the lives of a traveling bounty-hunting crew aboard a spaceship, the Bebop. Although it incorporates a wide variety of genres, the series draws most heavily from science fiction, western, and noir films. Its most prominent themes are existential ennui, loneliness, and the inability to escape one's past.
                 </p>
-                <img src = "images/poster.jpg" width="200" alt="poster"/>
-
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src = "images/poster.jpg" width="200" alt="poster"/>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>"Once, there was a tiger striped cat. This cat, died a million deaths, revived and lived a million lives. And he had various owners that he didn’t really care about, the cat wasn’t afraid to die. Then ONE day, he met a white female cat, the two of them fell in love and lived together happily. Well, the years went by and the white female cat got old and passed away. The tiger striped cat cried a million times, then he also died. But this time…..he didn’t come back."</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="seg-begin" id="story">
                 <h2>Story</h2>
@@ -160,83 +171,83 @@
                 <h2>My Favorite Scenes</h2>
                 <div class="gallery">
                     <div class="view view-sixth">
-                        <img src="images/1.png" alt="The duel"/>
+                        <img src="images/1.png" alt=""/>
                         <div class="mask">
                             <h2>The duel</h2>
-                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                            <a href="#" class="info">Read More</a>
+                            <p>Spike and Vicious began a fight at the top of a church. Spike didn't die though falling from the window.</p>
+                            <a href="/character.html#main" class="info">Read More</a>
                         </div>
                     </div>
                     <div class="view view-sixth">
-                        <img src="images/2.jpg" alt="Group photo"/>
+                        <img src="images/2.jpg" alt=""/>
                         <div class="mask">
                             <h2>Group photo</h2>
-                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                            <a href="#" class="info">Read More</a>
+                            <p>A photo of the main characters. It was said that this was a photo only for Jet, but everyone squeezed in...</p>
+                            <a href="/character.html#jet" class="info">Read More</a>
                         </div>
                     </div>
                     <div class="view view-sixth">
-                        <img src = "images/3.png" alt="See you cowgirl"/>
+                        <img src = "images/3.png" alt=""/>
                         <div class="mask">
                             <h2>See you cowgirl</h2>
-                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                            <a href="#" class="info">Read More</a>
+                            <p>This is the ending of one of my favorite episodes. Faye, Ed, and Ein left the spaceship Bebop (temporarily).</p>
+                            <a href="/character.html#faye" class="info">Read More</a>
                         </div>
                     </div>
                     <div class="view view-sixth">
-                        <img src = "images/4.jpg" alt="Spike with the gun"/>
+                        <img src = "images/4.jpg" alt=""/>
                         <div class="mask">
                             <h2>Spike with the gun</h2>
-                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                            <a href="#" class="info">Read More</a>
+                            <p>Spike is always with his gun (and cigaratte). He is shooting at someone, or... at you?</p>
+                            <a href="/character.html#main" class="info">Read More</a>
                         </div>
                     </div>
                     <div class="view view-sixth">
-                        <img src = "images/5.jpg" alt="Faye with guns"/>
+                        <img src = "images/5.jpg" alt=""/>
                         <div class="mask">
                             <h2>Faye with guns</h2>
-                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                            <a href="#" class="info">Read More</a>
+                            <p>This is the scene of Faye's first appearance. She was escaping from debt collectors and got caught. A charming woman.</p>
+                            <a href="/character.html#faye" class="info">Read More</a>
                         </div>
                     </div>
                     <div class="view view-sixth">
-                        <img src="images/6.jpg" alt="Spike smoking"/>
+                        <img src="images/6.jpg" alt=""/>
                         <div class="mask">
-                            <h2>Spike smoking</h2>
-                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                            <a href="#" class="info">Read More</a>
+                            <h2>Spike and Julia</h2>
+                            <p>This is a photo of Spike and Julia of their young age. They were young, happy, and bold at that time. Of course they are still like that now.</p>
+                            <a href="/character.html#julia" class="info">Read More</a>
                         </div>
                     </div>
                     <div class="view view-sixth">
-                        <img src="images/7.jpg" alt="Ed's bye bye"/>
+                        <img src="images/7.jpg" alt=""/>
                         <div class="mask">
                             <h2>Ed's bye bye</h2>
-                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                            <a href="#" class="info">Read More</a>
+                            <p>When Ed left the spaceship Cowboy, she left a painting on the roof of the spaceship.</p>
+                            <a href="/character.html#ed" class="info">Read More</a>
                         </div>
                     </div>
                     <div class="view view-sixth">
-                        <img src="images/8.jpg" alt="Spike at his last"/>
+                        <img src="images/8.jpg" alt=""/>
                         <div class="mask">
-                            <h2>Spike at his last</h2>
-                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                            <a href="#" class="info">Read More</a>
+                            <h2>Spike at the end</h2>
+                            <p>Yeah. It's the end of him. ...I guess? I hope so.</p>
+                            <a href="/character.html#main" class="info">Read More</a>
                         </div>
                     </div>
                     <div class="view view-sixth">
-                        <img src="images/9.jpg" alt="Ed and the earth"/>
+                        <img src="images/9.jpg" alt=""/>
                         <div class="mask">
                             <h2>Ed and the earth</h2>
-                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                            <a href="#" class="info">Read More</a>
+                            <p>As I mentioned before, Ed loves painting. Although there are few people living on the earth at that time, she was still painting...</p>
+                            <a href="/character.html#ed" class="info">Read More</a>
                         </div>
                     </div>
                     <div class="view view-sixth">
-                        <img src="images/10.jpg" alt="Episode 1"/>
+                        <img src="images/10.jpg" alt=""/>
                         <div class="mask">
                             <h2>Episode 1</h2>
-                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                            <a href="#" class="info">Read More</a>
+                            <p>Spike meaninglessly stole a bread from this pretty woman and offered her some cigerattes. That's SO Spike.</p>
+                            <a href="/character.html" class="info">Read More</a>
                         </div>
                     </div>
                 </div>
